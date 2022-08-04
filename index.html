@@ -9,6 +9,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/3.0.2/vue.global.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" href="../stylesheets/all.css">
 
 </head>
 
@@ -30,33 +31,9 @@
                   v-on:previous-page="prePage" v-on:nextone-page="nextPage">
                 </page-list>
 
-                <!--
-                  <li class="page-item " :class="{disabled: pagenumber === 1}">
-                  <a class="page-link" href="#" tabindex="-1" v-on:click="prepage">Previous</a>
-                </li>
-                  <pageList v-bind:pagetotal="num"></pageList>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active">
-                  <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                
-                
-                <li class="page-item">
-                  <a class="page-link" href="#" v-on:click="nextpage" :class="{'disabled': pagenumber === 1}">Next</a>
-                </li>
-                -->
               </ul>
             </nav>
           </div>
-
-
-
-
-
-
-
-
 
         </div>
       </div>
@@ -65,7 +42,7 @@
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <link rel="stylesheet" href="/stylesheets/all.css">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="main.js"> </script>
     <!--載入 bootstrap-->
