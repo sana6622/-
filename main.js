@@ -65,7 +65,7 @@ const app = Vue.createApp({
     },
     //下一頁
     nextPage() {
-      if (this.pagenumber <= this.pageTotal) {
+      if (this.pagenumber < this.pageTotal) {
         this.pagenumber = this.pagenumber + 1
         this.getPage(this.dataList, this.pagenumber)
       }
