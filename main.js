@@ -84,10 +84,10 @@ app.component('card', {
   props: ['cards'],
   template:
     `   
-  <div class=" col-md-6 py-2  " v-for="(item,i) in cards" :key="'itemNum'+i">      
+  <div class=" col-sm-6 col-md-4 col-xl-3 py-2  " v-for="(item,i) in cards" :key="'itemNum'+i">      
    <div class="card">
     <div class="card bg-dark text-white text-left">
-      <img class="card-img-top  img-cover" :src="item.Picture1" alt="" style="height:155px">
+      <img class="card-img-top  img-cover" :src="item.Picture1" alt="">
 
       <div class="card-img-overlay d-flex justify-content-between align-items-end p-0 px-3 "
         style="background-color:rgba(0,0,0,0.2)">
@@ -96,7 +96,7 @@ app.component('card', {
       </div>
     </div>
 
-    <div class="card-body text-left"style="height:250px">
+    <div class="card-body text-left">
       <p class="card-text">
         <i class="far fa-clock fa-clock-time"></i>
         &nbsp;{{item.Opentime}}
